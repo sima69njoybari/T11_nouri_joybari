@@ -14,7 +14,7 @@ body {
 width: 100%;
 }
 
-.btn-bg-lightyellow {
+/* .btn-bg-lightyellow {
     padding: 12px 0;
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-white);
@@ -27,18 +27,18 @@ width: 100%;
     --bs-btn-active-color: var(--bs-btn-hover-color);
     --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
     --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
-}
+} */
 
 h1 {
-    font-size: min(max(1rem, calc(0.5rem + 3.5vw)), 3.5rem);
+    font-size: clamp(1rem, calc(0.5rem + 3.5vw), 3.5rem);
 }
 
 h2 {
-    font-size: min(max(1rem, calc(0.5rem + 2vw)), 2rem);
+    font-size: clamp(1rem, calc(0.5rem + 2vw), 2rem);
 }
 
 h3 {
-    font-size: min(max(0.9rem, calc(0.2rem + 1.5vw)), 1.5rem);
+    font-size: clamp(0.9rem, calc(0.2rem + 1.5vw), 1.5rem);
 }
 
 h5 {
@@ -69,9 +69,6 @@ img{
     width: 100%;
 }
 
-.min-width {
-    min-width: 250px;
-}
 
 .image-container{
     max-width: 50%;
